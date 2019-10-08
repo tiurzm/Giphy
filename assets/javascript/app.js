@@ -11,7 +11,7 @@ var disney = ["Tinker Bell","Evil Queen", "Mickey Mouse", "Pocahontas", "Mother 
     $("button").on("click", function(event){
         event.preventDefault();
         var character = $(this).attr("data-character");
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + character + "&api_key=VVy1qq3CVz412GDiIaDHXKBkxXzX14kh&limit=10";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + character + "&api_key=VVy1qq3CVz412GDiIaDHXKBkxXzX14kh&limit=10";
     
         $.ajax({
             url: queryURL,
