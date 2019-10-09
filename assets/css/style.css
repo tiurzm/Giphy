@@ -12,12 +12,6 @@ button {
     padding: 0 20px;
 }
 
-#animate {
-    padding: 20px;
-}
-#animate > img, #animate > p {
-    display: inline-block;
-  }
 #character-form {
     margin-top: 25px;
     text-align: right;
