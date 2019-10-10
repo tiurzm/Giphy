@@ -19,7 +19,6 @@ var disney = ["Tinker Bell","Evil Queen", "Mickey Mouse", "Pocahontas", "Pascal"
             url: queryURL,
             method: "GET"
         }) .then(function(response){
-            // console.log(response.data);
             for (var j = 0; j < response.data.length; j++) {
                 var move = response.data[j].images.fixed_height.url
                 // console.log(move);
@@ -63,5 +62,6 @@ var disney = ["Tinker Bell","Evil Queen", "Mickey Mouse", "Pocahontas", "Pascal"
         $("#character-button").empty();
         addAray();
         addImage();
+        $("#character-input").val('');
     });
 

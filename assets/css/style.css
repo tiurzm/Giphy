@@ -1,18 +1,100 @@
+html { 
+    background: 
+    linear-gradient(
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.2)
+        ), 
+        url(../images/mv.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: static;
+}
 body {
     padding: 0;
     margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 button {
     font-size: 15px;
     margin: 5px;
     border-radius: 5px;
+    background: #fffffff0;
+}
+header {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Arima Madurai', cursive;
+    margin: 40px auto;
+    background: white;
+    max-width:350px;
+    border-radius: 5px;
+    
+}
+p {
+    color: white;
 }
 .container {
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 0 20px;
 }
 
+#add-character {
+    font-size: 20px;
+}
+#animate {
+    /* border: 2px solid red; */
+}
+#character-button {
+    float: left;
+    width: 75%;
+    /* height: auto; */
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    padding: 0;
+}
 #character-form {
-    margin-top: 25px;
-    text-align: right;
+    float: right;
+    width: 25%;
+    /* border: 1px solid red; */
+    padding: 0;
+    margin: 0;
+}
+
+#character-input{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    max-width: 300px;
+    height: 25px;
+    width: 100%;
+    border-radius: 5px;
+} 
+.label {
+    font-size: 15px;
+    background: #fffffff0;
+    padding: 8px 5px;
+    max-width: 130px;
+    width: 100%;
+    border-radius: 3px;
+    text-align: center;
+}
+.one {
+    /* border: 1px solid red; */
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 980px){
+    .one{
+        border: 1px solid red;
+    }
+    /* #character-form {
+        width: 30%;
+    } */
+}
+@media screen and (max-width: 768px){
+   
+}
+@media screen and (max-width: 640px){
 }
