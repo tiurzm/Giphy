@@ -1,4 +1,5 @@
 var disney = ["Tinker Bell","Evil Queen", "Mickey Mouse", "Pocahontas", "Pascal", "Princess Jasmine","Mowgli", "Violet Parr", "Megara", "Simba", "Robin Hood", "James P. Sullivan", "Marie", "Dory", "Nick Wilde", "Mother Gothel"]; 
+    $("#animate").hide();
     function addAray(){
         for(var i = 0; i < disney.length; i++){
             var newButton = $("<button>");
@@ -12,6 +13,7 @@ var disney = ["Tinker Bell","Evil Queen", "Mickey Mouse", "Pocahontas", "Pascal"
     function addImage(){
         $("button").on("click", function(event){
         event.preventDefault();
+        $("#animate").show();
         var character = $(this).attr("data-character");
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + character + "&api_key=VVy1qq3CVz412GDiIaDHXKBkxXzX14kh&limit=10";
     
@@ -19,6 +21,7 @@ var disney = ["Tinker Bell","Evil Queen", "Mickey Mouse", "Pocahontas", "Pascal"
             url: queryURL,
             method: "GET"
         }) .then(function(response){
+            console.log(response)
             for (var j = 0; j < response.data.length; j++) {
                 var move = response.data[j].images.fixed_height.url
                 // console.log(move);
@@ -33,9 +36,10 @@ var disney = ["Tinker Bell","Evil Queen", "Mickey Mouse", "Pocahontas", "Pascal"
                 image.attr("data-animate", move);
                 image.attr("data-state", "still")
                 image.attr("data-still", notMove);
-                image.attr("src", notMove)
-                $("#animate").append(p, image);
+                image.attr("src", notMove);
+                $("#animate").append(p, image);   
             }
+            
             $(".gif").on("click",function(event){
                 event.preventDefault();
                 var state = $(this).attr("data-state");
