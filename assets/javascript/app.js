@@ -3,6 +3,10 @@ var disney = ["Tinker Bell","Evil Queen", "Mickey Mouse", "Pocahontas", "Pascal"
     function addAray(){
         for(var i = 0; i < disney.length; i++){
             var newButton = $("<button>");
+            newButton.addClass("m-1");
+            newButton.addClass("btn");
+            newButton.addClass("btn-outline-success");
+            newButton.css("color", "black");
             newButton.attr("data-character", disney[i])
             newButton.text(disney[i]);
             $("#character-button").append(newButton);
@@ -28,11 +32,20 @@ var disney = ["Tinker Bell","Evil Queen", "Mickey Mouse", "Pocahontas", "Pascal"
                 var notMove = response.data[j].images.fixed_height_still.url
                 // console.log(notMove);
                 var rating =response.data[j].rating
+                // var newDiv = $("<div>");
+                // newDiv.addClass("div");
+                // newDiv.css("border", "2px solid red");
+                // $("#animate").append(newDiv);
                 var p = $("<p>");
                 p.text("Rating: " + rating);
                 p.addClass("text");
+                p.addClass("m-3");
+                p.addClass("float-left");
                 var image = $("<img>");
                 image.addClass("gif");
+                image.addClass("m-3");
+                image.addClass("float-left");
+                image.addClass("port-image");
                 image.attr("data-animate", move);
                 image.attr("data-state", "still")
                 image.attr("data-still", notMove);

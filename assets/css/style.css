@@ -1,10 +1,5 @@
 html { 
-    background: 
-    /* linear-gradient(
-        rgba(255, 255, 255, 0.1),
-        rgba(255, 255, 255, 0.1)
-        ),  */
-        url(../images/mm.jpg) no-repeat center center fixed; 
+    background: url(../images/mm.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -26,12 +21,9 @@ header {
     text-align: center;
     font-family: 'Arima Madurai', cursive;
     margin: 20px auto;
-    /* background: white;
-    max-width:350px;
-    border-radius: 5px;  */
+
 }
 .button {
-    /* border: 1px solid red; */
     overflow: hidden;
     max-width: 1250px;
     margin: 0 auto;
@@ -42,12 +34,10 @@ header {
 }
 .gif {
     float: left;
-    /* border: 1px solid red; */
     margin: 15px;   
 }
 .text {
     float: left;
-    /* border: 1px solid red;  */
 }
 .label {
     font-size: 15px;
@@ -94,9 +84,6 @@ header {
 } 
 
 @media screen and (max-width: 980px){
-    .button{
-        /* border: 1px solid red; */
-    }
 }
 @media screen and (max-width: 768px){
    
