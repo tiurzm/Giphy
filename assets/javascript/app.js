@@ -28,24 +28,15 @@ var disney = ["Tinker Bell","Evil Queen", "Mickey Mouse", "Pocahontas", "Pascal"
             console.log(response)
             for (var j = 0; j < response.data.length; j++) {
                 var move = response.data[j].images.fixed_height.url
-                // console.log(move);
                 var notMove = response.data[j].images.fixed_height_still.url
-                // console.log(notMove);
                 var rating =response.data[j].rating
-                // var newDiv = $("<div>");
-                // newDiv.addClass("div");
-                // newDiv.css("border", "2px solid red");
-                // $("#animate").append(newDiv);
                 var p = $("<p>");
                 p.text("Rating: " + rating);
                 p.addClass("text");
                 p.addClass("m-3");
-                p.addClass("float-left");
                 var image = $("<img>");
                 image.addClass("gif");
                 image.addClass("m-3");
-                image.addClass("float-left");
-                image.addClass("port-image");
                 image.attr("data-animate", move);
                 image.attr("data-state", "still")
                 image.attr("data-still", notMove);
