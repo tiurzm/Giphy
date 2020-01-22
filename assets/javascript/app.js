@@ -27,6 +27,7 @@ var disney = ["Tinker Bell","Evil Queen", "Mickey Mouse", "Pocahontas", "Pascal"
         }) .then(function(response){
             console.log(response)
             var dataLength = response.data.length
+            console.log(dataLength);
             for (var j = 0; j < dataLength; j++) {
                 var newDiv = $("<div>");
                 newDiv.addClass("div");
