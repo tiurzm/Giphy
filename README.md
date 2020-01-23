@@ -6,5 +6,5 @@ This is a [Disney Giphy](https://tiurzm.github.io/Giphy/) application, built usi
 
 ## How to use it:
 1. Click the character's name.
-2. Click the image to move and pause the image. 
+2. Click the image to move and pause. 
 3. Enter a new character's name on input form if you want to have a new character. 
